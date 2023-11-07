@@ -4,8 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            }
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+
+
+            }
+            .navitems ul {
+                display: flex;
+                list-style: none;
+                gap: 10px;
+              
+              
+
+
+            }
+            .navitems ul li{
+                height: auto;
+                gap:10px;
+                width: 90px;
+                align-items: center ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.1ms;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                font-size: 1.3rem;
+
+
+            }
+            
+            .navitems ul li:hover{
+               
+                background-color: white;
+                color: black;
+                scale: 1.2;
+                zoom: 1.1;
+        
+                
+                
+            }
+            .navitems{
+                position: relative;
+                justify-self: end;
+                right: 50px;
+
+                 
+
+            }
+            .loader{
+                background-color: black;
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* display: none; */
+
+            }
+        .rolerimg {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+            }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+        .music{
+            display: grid;
+            grid-template-columns: repeat( 2, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+        }
+
+        </style>
 </head>
 <body>
-    
+    <div class="loader">
+        <div class="rolerimg">
+           
+        </div>
+    </div>
+
+<div  class="nav">
+    <div style="background-color: rgb(177, 122, 228); height: 10px;" class="blue">
+
+    </div>
+    <div style="background-color: black; height: 50px; color: white;" class="navbar">
+        <div style="width: 100px; display: flex; padding-top: 10px;" class="navtitle">
+            <h2 >UNIBag</h2>
+            
+        </div>
+        <div class="navitems">
+            <ul>
+                <li>Home</li>
+
+                <li>About</li>
+                <li>Products</li>
+                <li>Contacts</li>
+            </ul>
+        
+        </div>
+    </div>
+</div>
+<div class="music">
+    <div class="videotext">
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum eius quaerat consequuntur pariatur distinctio magni rem perferendis, nesciunt explicabo, voluptas, vero temporibus quidem. Saepe molestiae incidunt nulla illum alias?</p>
+    </div>
+    <div class="video">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tlnIQoxxrhY?si=-3Cj4BIoyw8v1o1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</div>
+<script>
+    window.onload = function() {
+    document.querySelector('.loader').style.display = 'none';
+};
+</script>
+    <!-- window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    setTimeout(()=>{
+
+</script> -->
 </body>
-</html>
+    </html>
